@@ -1,16 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@include file="/common/taglib.jsp" %>	
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gia Phả Việt Nam</title>
 
+</head>
+<body>
 	<form name="form1" id="form1">
 
 		<div class="wrapper">
 			<a href="/home/view" title="Bấm vào đây đề về Trang chủ">
 				<div class="banner txtC" id="heading-page">
-					<img src="/home/adimgs/cen_bn.jpg" style="height: 150px" />
+					<img src="<c:url value='/template/adimgs/cen_bn.jpg'></c:url>" style="height: 150px" />
 				</div>
 			</a>
 			<div class="wrappage">
 				<div class="clb ovh top_news">
 					<div id="dvgss"
-						style="background: url(/home/adimgs/tnbd.png) no-repeat !important;">
+						style="background: url(<c:url value='/template/adimgs/tnbd.png'></c:url>) no-repeat !important;">
 
 
 
@@ -19,13 +28,13 @@
 							style="width: 440px; height: 240px; margin: 0 auto; padding-top: 9px">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img class="d-block w-100" src="adimgs/sl1.jpeg" alt="Panther">
+									<img class="d-block w-100" src="<c:url value='/template/adimgs/sl1.jpeg'></c:url>" alt="Panther">
 								</div>
 								<div class="carousel-item">
-									<img class="d-block w-100" src="adimgs/sl2.jpg" alt="Black Cat">
+									<img class="d-block w-100" src="<c:url value='/template/adimgs/sl2.jpg'></c:url>" alt="Black Cat">
 								</div>
 								<div class="carousel-item">
-									<img class="d-block w-100" src="adimgs/sl3.jpg" alt="Lion">
+									<img class="d-block w-100" src="<c:url value='/template/adimgs/sl3.jpg'></c:url>" alt="Lion">
 								</div>
 							</div>
 						</div>
@@ -33,7 +42,7 @@
 						<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 						<script
 							src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-						<script src="adjs/bootstrap.min.js"></script>
+						<script src="<c:url value='/template/adjs/bootstrap.min.js'></c:url>"></script>
 
 					</div>
 					<div class="ss_vlist">
@@ -192,6 +201,7 @@
 	</form>
 
 	
+	
 	<a href="#heading-page" id="toTop">to Top</a>
 
 	<script type="text/javascript">
@@ -349,3 +359,5 @@
 		<input type="hidden" value="0" id="hdpr" name="hdpr" /> <a
 			class="close-modal" style="margin-top: 5.5px; height: 3px;">Close</a>
 	</div>
+</body>
+</html>
